@@ -9,11 +9,14 @@ import { Component } from '@angular/core';
 export class Home {
   name:string = "Alisson";
 
+  mustShowTitle:boolean = false;
+
   updateName(name: string){
     this.name = name;
   }
 
   submit(){
-    alert("injeção de método em button");
+    // alert("injeção de método em button");
+    this.mustShowTitle = !this.mustShowTitle;
   }
 }

@@ -7,3 +7,9 @@
 </ul>
 
 <button [attr.aria-label]="name" (click)="submit()">{{name}}</button>
+
+@if(mustShowTitle){
+    <h1>Título: {{ name }}</h1>
+} @else {
+    <h2>Has no Title</h2>
+}
