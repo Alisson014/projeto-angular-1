@@ -6,6 +6,6 @@ import { Injectable } from '@angular/core';
 export class SubmitFormService {
 
   sendToBackend(info: string){
-    alert(info);
+    console.log(info);
   }
 }

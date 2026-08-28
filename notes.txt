@@ -71,3 +71,19 @@
 """ São utilizados em outros componentes por injeção de atributos:
 >>> atributo = inject(nomeDaClasse);
 =============
+
+
+=============
+# Enviar informações entre componentes
+
+""" Receber algo do pai
+>>> @Input() nomeDaProps!: string;
+>>> @Input("nomeDoAtributoHTML") nomeDaProps!: string;
+
+
+""" Enviar algo ao pai
+""" No filho
+>>> @Output() nomeDoEmissor = new EventEmitter<string>();
+""" No pai
+>>>  (nomeDoEmissor)="functionCalled($event)"
+=============
