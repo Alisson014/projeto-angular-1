@@ -4,5 +4,6 @@
    @for (item of name; track $index) {
     <li> {{ name[$index] }} </li>
    } 
-
 </ul>
+
+<button [attr.aria-label]="name" (click)="submit()">{{name}}</button>

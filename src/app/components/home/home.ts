@@ -12,4 +12,8 @@ export class Home {
   updateName(name: string){
     this.name = name;
   }
+
+  submit(){
+    alert("injeção de método em button");
+  }
 }

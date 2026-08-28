@@ -27,4 +27,16 @@
 >>> atualizaMeuEstado(valor: boolean){
 >>>     this.meuEstado = valor;
 >>> }
+=============
+
+
+=============
+# Atributos Dinâmicos
+>>> <button [attr.arial-label]="props"></button>
+>>> <button [attr.meu-atributo]="props"></button>
+
+>>> <button [attr.aria-label]="name" (click)="submit()">{{name}}</button>
+>>> $event para injeção do evento no método
+=============
+
 
