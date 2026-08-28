@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { SubmitFormService } from '../../services/submit-form';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './home.css',
 })
 export class Home {
+  private sendFormService = inject(SubmitFormService);
+
   name:string = "Alisson";
 
   mustShowTitle:boolean = false;
@@ -17,6 +20,7 @@ export class Home {
 
   submit(){
     // alert("injeção de método em button");
+    this.sendFormService.sendToBackend(this.name);
     this.mustShowTitle = !this.mustShowTitle;
   }
 }

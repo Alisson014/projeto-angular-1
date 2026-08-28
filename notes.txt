@@ -59,3 +59,15 @@
 >>> @for (item of listItems; track item){
 >>>     ...
 >>> }
+=============
+
+
+=============
+# Services - compartilhando lógica
+
+>>> ng generate service submitForm raiz/Nome
+
+""" Os métodos são criados no arquivo service;
+""" São utilizados em outros componentes por injeção de atributos:
+>>> atributo = inject(nomeDaClasse);
+=============
