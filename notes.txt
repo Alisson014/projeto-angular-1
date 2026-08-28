@@ -1,0 +1,30 @@
+
+=============
+# Criando projeto
+>>> ng new nome-do-projeto
+=============
+
+=============
+# Criando componente
+>>> ng generate component pasta-raiz/nome-do-componente
+>>> ng generate component components/home
+
+''' Componentes são formados por até quatro arquivos básicos:
+'''   - .html
+'''   - .spec       para testes
+'''   - .ts         A classe que representa o componente (com a lógica e a dinamicidade)
+'''   - .css
+=============
+
+=============
+# Estados de um componente
+
+""" São criados no .ts do componente
+""" Mais especificamente, dentro da classe do componente
+
+>>> meuEstado = true;
+>>> 
+>>> atualizaMeuEstado(valor: boolean){
+>>>     this.meuEstado = valor;
+>>> }
+

@@ -1,1 +1,8 @@
-<p>home works!</p>
+<p>home works, {{ name }}!</p>
+
+<ul>
+   @for (item of name; track $index) {
+    <li> {{ name[$index] }} </li>
+   } 
+
+</ul>
